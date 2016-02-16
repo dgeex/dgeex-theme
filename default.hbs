@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    {{! Page Meta}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Favicon }}
+    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+
+    {{! Styles }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    {{! Responsive Meta Tags }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Scripts }}
+    <script type='text/javascript' src='{{asset "js/all.min.js"}}'></script>
+    {{ghost_head}}
+
+  </head>
+    
+  <body class="{{body_class}}">
+    {{> sidebar}}
+    <div class="wrapper_dgeex">
+      {{{body}}}
+    </div>
+ {{ghost_foot}}
+    <script language="javascript" type="text/javascript">
+      responsive_iframes();
+    </script>
+    </body>
+</html>

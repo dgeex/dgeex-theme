@@ -1,0 +1,130 @@
+//**
+// Mixins
+//**
+
+.HeaderFont () {
+    font-family: @header_font;
+    line-height: 1.313em;
+    font-weight: 400;
+}
+ 
+
+//**
+// Styles
+//**
+
+body {
+    .BodyColor;
+    margin: 0;
+    font-family: @default_font;
+    line-height: @golden + 0em;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+a {
+    background: transparent;
+}
+
+a:link, a:visited {
+    .LinkColor;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    .LinkHoverColor;
+    outline: 0;
+}
+
+h1 {
+    .HeaderFont;
+    font-size: 3em;
+    margin: 0.563em 0;
+}
+
+h2 {
+    .HeaderFont;
+    font-size: 2.25em;
+    margin: 0.625em 0;
+}
+
+h3 {
+    .HeaderFont;
+    font-size: 1.5em;
+    margin: 1.313em 0;
+}
+
+h4 {
+    .HeaderFont;
+    font-size: 1.313em;
+    margin: 1.313em 0;
+}
+
+h5 {
+    .HeaderFont;
+    font-size: 1.125em;
+    margin: 1.313em 0;
+}
+
+h6 {
+    .HeaderFont;
+    font-size: 1em;
+    margin: 0.75em 0;
+}
+
+h1.posttitle_dgeex {
+    .PostTitleColor;
+    font-weight: 700;
+    position: relative;
+    padding: @golden / 2 + 0rem  0rem;
+}
+
+h1.blogtitle_dgeex, h1.blogtitle_dgeex a {
+    .BlogTitleColor;
+    font-size: 4.5rem;
+    margin: 0;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 0 0 @golden / 1.25 + 0em;
+    text-align: left;
+    -webkit-border-top-left-radius: 0.3em;
+    -webkit-border-top-right-radius: 0.3em;
+    -moz-border-radius-topleft: 0.3em;
+    -moz-border-radius-topright: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    position: relative;
+    top: 2px;
+}
+ 
+p.blogdescription_dgeex, p.blogdescription_dgeex a {
+    .BlogDescriptionColor;
+    font-size: 1.313rem;
+    text-decoration: none;
+    padding: 0 0 @golden + 0em 0;
+    -webkit-border-bottom-left-radius: 0.3em;
+    -webkit-border-bottom-right-radius: 0.3em;
+    -moz-border-radius-bottomleft: 0.3em;
+    -moz-border-radius-bottomright: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    position: relative;
+    top: -2px;
+}
+
+.hidethis_dgeex {
+    display: none;
+}
+
+blockquote {
+    .BlockquoteColor;
+    margin: 1.563rem 0;
+    padding: 1.250rem;
+    font-style: italic;
+    font-size: 1.2em;
+}

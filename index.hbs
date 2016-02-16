@@ -1,0 +1,37 @@
+{{!< default}}
+{{> header}}	  
+<main role="main" class="main_dgeex">
+
+  {{#foreach posts}}
+
+  <article class="article_dgeex" role="article" itemscope itemtype="http://schema.org/Article">
+    <header class="postheader_dgeex">
+	<h1 class="posttitle_dgeex" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{{title}}}</a></h1>
+    </header>
+    {{#if image}}
+      <a href="{{{url}}}">
+        <img src={{image}} style="min-width: 100%">
+      </a>
+    {{/if}}
+    <div class="postcontent_dgeex" itemprop="articleBody">
+      <p>{{excerpt words=100}}&hellip;</p>
+    </div>
+    <a href="{{{url}}}">CONTINUE READING → </a>
+    <div class="posttags_dgeex" style="text-align: right">
+      {{#if tags}}
+      Tags: {{tags separator="  "}}
+      {{/if}}
+    </div>
+    <p style="text-align: right">Date Published: <time class="date_dgeex" datetime="{{date format='ll'}}" itemprop="datePublished"> {{date format='ll'}}</time></p>
+  </article>
+
+  {{/foreach}}
+  <div class="pagination_dgeex">
+    {{#if pagination}}
+    {{{pagination}}}
+    {{/if}}
+  </div>
+
+</main>
+
+{{> footer}}

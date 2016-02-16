@@ -1,0 +1,277 @@
+//**
+// Styles
+//**
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+hr {
+    .HRColor;
+    .box-sizing(content-box);
+    height: 0;
+    display: block;
+    margin: @golden + 0em 0;
+    margin-left: 15em;
+    padding: 0;
+    font-size: @golden + 0em;
+}
+
+.sidebar_dgeex {
+    .SideBarColor();
+    width: 15em;
+    max-width: @readable_width /2;
+    margin: 0;
+    padding-bottom: @add_padding / 2 + 0em;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.25), 0px 2px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.25), 0px 2px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25), 0px 0px 10px 2px rgba(0,0,0,0.25);
+}
+
+.sidebartext_dgeex {
+    .SideBarTextColor();
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    img {
+    	background-color: @color_04;
+        .border-radius(50%);
+	width: 7em;
+	left: 4em;
+	z-index: 3;
+	text-align: center;
+	padding: 0.125em;
+    }
+}
+
+.sidebartitle_dgeex {
+    .SideBarTitleColor();
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.sidebardescription_dgeex {
+    .SideBarDescriptionColor();
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.sidebaricons_dgeex {
+    .SideBarIconsColor();
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 0.2em
+}
+
+.social_dgeex {
+    .SocialColor();
+    text-align: center;
+}
+
+.wrapper_dgeex {
+    width: 100%;
+    max-width: @readable_width + 2 * @add_padding;
+    margin: 0 auto 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header_dgeex {
+    .HeaderColor;
+    text-align: center;
+    margin-bottom: 0.5em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    border: 1px;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+}
+
+.logo_dgeex {
+    width: 5em;
+    position: absolute;
+    left: 3em;
+    top: @golden + 0em;
+    z-index: 2;
+}
+
+.postheader_dgeex {
+    .PostHeaderColor;
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 0;
+}
+ 
+.article_dgeex {
+    .ArticleColor;
+    padding: 0 @add_padding + 0em @add_padding / 4 + 0em  @add_padding + 0em;
+    margin-bottom: 0.5em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    text-align: justify;
+}
+
+.readnext_dgeex {
+     margin-bottom: 0.5em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    text-align: justify;
+    z-index: 1;
+    &:before {
+        content: "";
+	display: block;
+	position: absolute;
+	height: 26em;
+	width: 100%;
+        background-color: fade(@color_01,70%);
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em;
+    }  
+}
+
+.post_dgeex {
+    .ReadnextColor();
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    text-align: center;
+    height: 12em;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.postcontent_dgeex {
+    padding-top: 0.5em;
+}
+
+.date_dgeex {
+    font-weight: 700;
+    text-align: right;
+}
+
+.footer_dgeex {
+    .FooterColor;
+    margin-top: 0.5em;
+    text-align: center;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+}
+
+.pagination_dgeex {
+    .PaginationColor;
+    text-align: center;
+    padding: @golden / 2 + 0em @golden + 0em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.16), 0px 2px 10px 2px rgba(0,0,0,0.16);
+}
+
+.posttags_dgeex {
+    .PosttagsColor;
+    margin-top: @golden + 0em;
+    text-align: center;
+}
+ 
+.sharepost_dgeex {
+    .SharePostColor;
+    margin: @golden + 0em 0 2 * @golden + 0em 0;
+    padding: @golden + 0em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+ 
+h4.share_dgeex {
+    margin: 0 0.5em 0 0;
+}
+ 
+.share_dgeex {
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ 
+.authorimage_dgeex {
+    .AuthorImageColor;
+    float: left;
+    line-height: 0;
+    margin: @golden + 0em;
+    padding: 0.125em;
+    .border-radius(50%);
+    height: 5em;
+    width: 5em;
+    img {
+        .border-radius(50%);
+	width: 7em;
+	position: fixed;
+	top: 15em;
+	left: 4em;
+	z-index: 3;
+	text-align: center;
+    }
+}
+
+h4.authorname_dgeex {
+    margin:0;
+}
+ 
+.postfooter_dgeex {
+    position: relative;
+}
+ 
+blockquote {
+    .BlockquoteColor;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+}
+
+/* CLEAR - for modern awesome browsers */
+.sharepost_dgeex:before,
+.sharepost_dgeex:after,
+.postfooter_dgeex:before,
+.postfooter_dgeex:after {
+    content: "";
+    display: table;
+}
+
+.sharepost_dgeex:after,
+.postfooter_dgeex:after {
+    clear: both;
+}
+
+/* CLEAR - for IE 6/7 (trigger hasLayout) */
+.ie .sharepost_dgeex,
+.ie .postfooter_dgeex {
+    zoom: 1;
+}

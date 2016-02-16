@@ -1,0 +1,85 @@
+{{!< default}}
+{{> header}}
+<main role="main" class="main_dgeex">
+
+  {{#post}}
+
+  <article class="article_dgeex" role="article" itemscope itemtype="http://schema.org/Article">
+    <header class="postheader_dgeex">
+      <h1 class="posttitle_dgeex" itemprop="headline">{{title}}</h1>
+    </header>
+    {{#if image}}
+      <img src={{image}}>
+    {{/if}}
+    <div class="postcontent_dgeex" itemprop="articleBody">
+      <p>{{content}}</p>
+    </div>
+    <div class="posttags_dgeex">
+      {{#if tags}}
+      Tags: {{tags separator="  "}}
+      {{/if}}
+    </div>
+   
+    <footer class="postfooter_dgeex">
+      {{#author}}
+      {{#if image}}
+      <a href="{{url}}">
+	<img src="{{image}}" class="authorimage_dgeex">
+      </a>
+      <section class="authorname_dgeex">
+	<h4 style="margin: 1.618em 0 0 0"><a href="{{url}}">{{name}}</a></h4>
+	<time class="date_dgeex" datetime="{{date format='ll'}}" itemprop="datePublished">{{date format='ll'}}</time>
+	<p>Read <a href="{{url}}">MORE POSTS</a> by this author.</p>
+	{{/if}}
+	{{#if bio}}
+	<p>{{bio}}</p>
+	{{else}}
+      </section>
+      {{/if}}
+      {{/author}}
+      
+      <section class="sharepost_dgeex">
+	<h4 class="share_dgeex" style="margin-right:5em">Share this post</h4>
+	<a class="fa my-fa-twitter" style="font-size:x-large; position: absolute; right: 5em" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+	   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	  <span class="hidethis_dgeex">Twitter</span>
+	</a>
+	<a class="fa my-fa-facebook-square" style="font-size:x-large; position: absolute; right: 3em" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+	   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	  <span class="hidethis_dgeex">Facebook</span>
+	</a>
+	<a class="fa my-fa-google-plus" style="font-size:x-large; position: absolute; right: 1em" href="https://plus.google.com/share?url={{url absolute="true"}}"
+	   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	  <span class="hidethis_dgeex">Google+</span>
+	</a>
+      </section>
+
+  {{> discourse }}
+      
+  </article>
+<!--
+  <aside class="readnext_dgeex">
+    {{#next_post}}
+    <a href="{{url}}">
+      <section class="post_dgeex" {{#if image}} style="background-image: url({{image}}); background-size: cover; background-position: center;{{else}}no-cover{{/if}}">
+	<h2>{{title}}</h2>
+	<p>{{excerpt words="19"}}&hellip;</p>
+      </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a href="{{url}}">
+      <section class="post_dgeex" {{#if image}} style="background-image: url({{image}}); background-size: cover; background-position: center;{{else}}no-cover{{/if}}">
+	<h2>{{title}}</h2>
+	<p>{{excerpt words="19"}}&hellip;</p>
+      </section>
+    </a>
+    {{/prev_post}}
+  </aside>
+-->
+
+  {{/post}}
+
+</main>
+
+{{> footer}}

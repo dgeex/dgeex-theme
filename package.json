@@ -1,0 +1,12 @@
+{
+  "name": "DGeeX_Theme",
+  "version": "1.0.0",
+  "devDependencies": {
+    "assemble-less": "latest",
+    "grunt": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-real-favicon": "^0.1.3"
+  }
+}
